@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="/desafio1/css/style.css">
 </head>
 <body id="fundo">
-    <button id="btnCriar">Entre na caverna🦇</button>
+    <button id="btnCriar" style="display: none;">Entre na caverna🦇</button>
 
     <div id="videoContainer">
-        <video id="videoInicial"></video>
+        <video id="videoInicial" autoplay>
+            <source src="./video/bocaCaverna.mp4" type="video/mp4">
+            Seu navegador não suporta esse video.
+        </video>
 
-
-        <video id="videoBtn" controls>
-            <source src="/video/cave_video.mp4" type="video/mp4">
+        <video id="videoBtt" autoplay>
+            <source src="./video/depoisBTN.mp4" type="video/mp4">
             Seu navegador não suporta esse video.
         </video>
 
