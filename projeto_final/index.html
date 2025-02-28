@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Guilherme</title>
     <link rel="stylesheet" href="/projeto_final/css/style.css">
 </head>
+
 <body>
     <nav>
         <ul>
             <li><a href="#home">Início</a></li>
-            
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
@@ -21,9 +25,45 @@
             <h2>Olá, sou Guilherme</h2>
             <p>Estudante de Ciência da Computação - UFU | 6º Período</p>
             <p>Busco oportunidades em Desenvolvimento Web e Inteligência Artificial.</p>
-            <p>Minhas matérias preferidas são Sistemas Operacionais, Programação Orientada a Objetos e Programação para Internet</p>
+            <p>Minhas matérias preferidas são Sistemas Operacionais, Programação Orientada a Objetos e Programação para
+                Internet</p>
         </div>
-        
     </section>
 
-    
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Linguagens: Python, JavaScript, SQL</p>
+        <p>Ferramentas: Git, Flask, MySQL</p>
+        <p>Soft Skills: Comunicação, Trabalho em equipe, Resolução de problemas</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+            <div class="slider">
+                <div class="slide">
+                    <h3>API para pagamento com QrCode</h3>
+                    <p>Esse código é uma API para noticações em tempo real de pagamento;
+                        com protocolo websockets, para fazer a confirmação de um pagamento em tempo real.</p>
+                    <a href="https://github.com/guimileib/Payment_API_QrCode">Ver no GitHub</a>
+                </div>
+                <div class="slide">
+                    <h3>Gerador de Recibos</h3>
+                    <p>Site criado com HTML, CSS e JavaScript.</p>
+                    <a href="https://github.com/guimileib/receipts-generator">Ver no GitHub</a>
+                </div>
+                <div class="slide">
+                    <h3>Gerador de Recibos</h3>
+                    <p>Site criado com HTML, CSS e JavaScript.</p>
+                    <a href="https://github.com/guimileib/receipts-generator">Ver no GitHub</a>
+                </div>
+            </div>
+            <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="/projeto_final/js/script.js" defer></script>
+</body>
+
+</html>
