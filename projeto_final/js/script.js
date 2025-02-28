@@ -12,8 +12,7 @@ function mudarSlide(direcao) {
         slideIndex = slides.length - 1;
     }
 
-    let deslocamento = -slideIndex * 100;
-    slider.style.transform = `translateX(${deslocamento}%)`;
+    slider.style.transform = `translateX(${-slideIndex * 100}%)`;
 }
 
 document.addEventListener("DOMContentLoaded", function () {

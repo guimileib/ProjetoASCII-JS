@@ -15,71 +15,161 @@
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
+            <button id="darkModeToggle">🌙</button>
         </ul>
     </nav>
 
     <main>
         <section id="home">
             <div class="container">
-                <img src="/projeto_final/img/foto_perfil.jpeg" alt="Foto de Guilherme" class="perfil">
-                <h2>Olá, sou Guilherme</h2>
-                <p>Meu nome completo é Guilherme Mileib da Mata Silva, possuo 21 anos de idade.</p>
-                <p>Sou Estudante de Ciência da Computação - UFU | 6º Período</p>
-                <p>Minha trajetória acadêmica dentro da computação, começou em 2022, quando entrei na Universidade Federal de Catalão - UFCAT
-                    para cursar Ciência da Computação. Em 2023, a UFCAT foi incorporada pela Universidade Federal de Uberlândia - UFU, onde
-                    atualmente estou cursando. No último ano decidi entrar de cabeça no mundo da tecnologia e passei a desenvolver aplicações para 
-                    web.Durante esse período estudei e desenvolvi projetos em Python, JavaScript, HTML, CSS e SQL.
-                </p>
-                <p>Eu possuo bastante interesse por história antiga e um dos meus hobbies adquiridos recentemente é a leitura, desde filosofia 
-                    a livros de misticismo.</p>
-                <p>Minhas matérias preferidas são Sistemas Operacionais, Programação Orientada a Objetos e Programação para
-                    Internet</p>
+                <div class="profile-container">
+                    <img src="/projeto_final/img/foto_perfil.jpeg" alt="Foto de Guilherme" class="perfil">
+                    <h2>Olá, sou Guilherme</h2>
+                </div>
+                <div class="bio">
+                    <p><strong>Nome:</strong> Guilherme Mileib da Mata Silva</p>
+                    <p><strong>Idade:</strong> 21 anos</p>
+                    <p><strong>Curso:</strong> Ciência da Computação - UFU | 6º Período</p>
+                </div>
+                <div class="about">
+                    <h3>Sobre Mim</h3>
+                    <p>
+                        Minha trajetória acadêmica na computação começou em 2022, quando ingressei na Universidade
+                        Federal de Catalão - UFCAT.
+                        Em 2024, passei na transferência na Universidade Federal de Uberlândia - UFU, onde continuo meus
+                        estudos.
+                        No último ano, decidi me aprofundar no mundo da tecnologia e passei a desenvolver aplicações
+                        web, explorando principalmente aplicações com APIs.
+                    </p>
+                </div>
+                <div class="interests">
+                    <h3>Interesses</h3>
+                    <p>Tenho um grande interesse por história antiga e recentemente desenvolvi o hábito da leitura,
+                        explorando desde filosofia até livros de misticismo.</p>
+                </div>
             </div>
         </section>
-    
+
         <section id="habilidades">
-            <h2>Habilidades</h2>
-            <p><strong>Linguagens:</strong> Python, JavaScript, SQL</p>
-            <p><strong>Ferramentas:</strong> Git, Flask, MySQL</p>
-            <p><strong>Soft Skills:</strong> Comunicação, Trabalho em equipe, Resolução de problemas</p>
-        </section>
-    
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div class="slider-container">
-                <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
-                <div class="slider">
-                    <div class="slide">
-                        <h3>API para pagamento com QrCode</h3>
-                        <p>Esse código é uma API para noticações em tempo real de pagamento;
-                            com protocolo websockets, para fazer a confirmação de um pagamento em tempo real.</p>
-                        <a href="https://github.com/guimileib/Payment_API_QrCode">Ver no GitHub</a>
-                    </div>
-                    <div class="slide">
-                        <h3>Gerador de Recibos</h3>
-                        <p>Site criado com HTML, CSS e JavaScript.</p>
-                        <a href="https://github.com/guimileib/receipts-generator">Ver no GitHub</a>
-                    </div>
-                    <div class="slide">
-                        <h3>Gerador de Recibos</h3>
-                        <p>Site criado com HTML, CSS e JavaScript.</p>
-                        <a href="https://github.com/guimileib/receipts-generator">Ver no GitHub</a>
+            <div class="container habilidades-container">
+                <h2>Habilidades</h2>
+
+                <div class="skill">
+                    <p>Python - Intermediário</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
                     </div>
                 </div>
-                <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+
+                <div class="skill">
+                    <p>JavaScript - Básico</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>SQL - Intermediário</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>Git - Intermediário</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>Flask - Básico</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+
+                <div class="soft-skills">
+                    <h3>Soft Skills</h3>
+                    <p>Comunicação, Trabalho em equipe, Resolução de problemas</p>
+                </div>
             </div>
         </section>
-    
-        <section id="contato" class="last-section">
-            <h2>Contato</h2>
-            <p>Email: <a href="mailto:guilherme@gmail.com">guilherme@gmail.com</a></p>
-            <p><a href="https://github.com/guimileib">GitHub</a> | <a href="https://www.linkedin.com/in/guimileib/">LinkedIn</a></p>
+
+        <section id="projetos">
+            <div class="container projetos-container">
+                <h2>Projetos</h2>
+                <div class="slider-container">
+                    <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+                    <div class="slider">
+                        <div class="slide">
+                            <h3>API para pagamento com QrCode</h3>
+                            <p>Desenvolvi uma API com Flask para processar pagamentos via QrCode, permitindo
+                                notificações de pagamento em tempo real. Essa solução facilita transações instantâneas,
+                                garantindo segurança e praticidade para empresas e clientes.</p>
+                            <a href="https://github.com/guimileib/Payment_API_QrCode">Ver no GitHub</a>
+                        </div>
+                        <div class="slide">
+                            <h3>Gerador de Recibos</h3>
+                            <p>Criei um site interativo para gerar recibos personalizados, utilizando HTML, CSS e
+                                JavaScript. A ferramenta permite preencher dados essenciais e exportar recibos de forma
+                                prática, agilizando processos administrativos.</p>
+                            <a href="https://github.com/guimileib/receipts-generator">Ver no GitHub</a>
+                        </div>
+                        <div class="slide">
+                            <h3>Pet Adoption</h3>
+                            <p>Desenvolvi o backend para um site de adoção de pets, permitindo que usuários cadastrem
+                                animais disponíveis para adoção e filtrem opções conforme suas preferências. O sistema
+                                gerencia informações de forma eficiente, conectando futuros adotantes aos animais.</p>
+                            <a href="https://github.com/guimileib/PetAdoption">Ver no GitHub</a>
+                        </div>
+                    </div>
+                    <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+                </div>
+            </div>
         </section>
-    
+
+        <section id="contato" class="last-section">
+            <div class="container contato-container">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:guilherme@gmail.com">guilherme@gmail.com</a></p>
+                <p><a href="https://github.com/guimileib">GitHub</a> | <a
+                        href="https://www.linkedin.com/in/guimileib/">LinkedIn</a></p>
+            </div>
+        </section>
     </main>
-   
+
     <footer>
-        <p>&copy; 2025 Guilherme - Todos os direitos reservados</p>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/guimileib" target="_blank" class="icon github">
+                        <img src="/projeto_final/img/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/guimileib/" target="_blank" class="icon linkedin">
+                        <img src="/projeto_final/img/iconinstagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/guimileib/" target="_blank" class="icon linkedin">
+                        <img src="/projeto_final/img/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Guilherme - Todos os direitos reservados</p>
+        </div>
     </footer>
 
     <script src="/projeto_final/js/script.js" defer></script>
