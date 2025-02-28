@@ -36,3 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.add("dark-mode");
     }
 });
+
+const menuToggle = document.getElementById('darkModeToggle');
+    const menuList = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+        menuList.classList.toggle('show');
+    });

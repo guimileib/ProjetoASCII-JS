@@ -12,12 +12,71 @@ body {
     background-color: 121212;
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    nav button {
+        display: block; 
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 10px;
+        right:20px;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .perfil {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     background: #080a5f;
     padding: 20px 0;
+    z-index: 1000
 }
 
 nav ul {
@@ -47,6 +106,19 @@ nav ul li a:hover {
     height: 100vh;
     text-align: center;
     padding: 50px 0;
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: auto; 
+        padding-top: 80px; 
+    }
+
+    .perfil {
+        width: 150px; 
+        height: 150px;
+    }
 }
 
 .container {
@@ -119,7 +191,7 @@ section:last-of-type {
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -136,11 +208,28 @@ section:last-of-type {
 .slide {
     min-width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     border-radius: 10px;
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        max-width: 100%;
+    }
+
+    .slider {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+    }
 }
 
 .slide p {
@@ -207,6 +296,13 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-container {
