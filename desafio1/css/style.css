@@ -23,26 +23,41 @@
     background-color: black;
 }
 
+#videoBtt, #videoInicial {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
 #btnCriar {
     background-color: #18120f;
     color: rgb(172, 170, 170);
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     border: 2px solid #b8b7b6;
-    display: none;
-    position: fixed;
     z-index: 10;
+    position:fixed;
 }
 
-#videoBtt, #videoInicial {
-    width: 100vw;
-    object-fit: cover;
-    height: 100vh;
+@media screen and (max-width: 768px) {
+    #btnCriar {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }
+
+@media screen and (max-width: 480px) {
+    #btnCriar {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
 
 #videoBtt {
     display: none;
@@ -53,4 +68,5 @@ body, html {
     padding: 0;
     overflow: hidden; 
     height: 100%;
+    width: 100%;
 }
